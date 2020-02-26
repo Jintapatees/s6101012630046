@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <br>
+
+    <form action="add" method="post">
+        {% csrf_token %}
+        <h2>Input 1</h2>
+        <input type="text" name="input_1" required >
+
+        <h2>Input 2</h2>
+        <input type="text" name="input_2" required >
+        
+        <br><br>
+        <input type="submit" name="add_button" value="Add">
+
+        <br>
+        <h2>Result is {{result}}</h2>
+    </form>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 """
-WSGI config for s6101012630046 project.
+WSGI config for Calculator project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 's6101012630046.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Calculator.settings')
 
 application = get_wsgi_application()
