@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Calculator_GET import views
+from Calculator import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('calculate', views.calculate, name='calculate'),
+    path('', views.index, name='index'),
+    path('about', views.about, name='about')
+    path('calculatorGET', views.calaulatorGET, name='calaulatorGET')
+
+    # path('calculate', views.calculate, name='calculate'),
 ]
