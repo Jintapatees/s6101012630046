@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+
+<head>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <br>
+    <h1>Calculator</h1>
+
+    <form action="calculate" method="GET">
+        
+        <h2>Input 1</h2>
+        <input type="number" name="input_1" required id="input_1">
+
+        <h2>Input 2</h2>
+        <input type="number" name="input_2" required id='input_2'>
+
+        <br><br>
+        <input type="submit" name="add" value="Add" id='add'>
+        <input type="submit" name="sub" value="Sub" id='sub'>
+        <input type="submit" name="multiple" value="Multiple" id='multiple'>
+        <input type="submit" name="divide" value="Divide" id='divide'>
+
+        <br><br>
+        <result>Result is {{result}}</result>
+
+        
+    </form>
+</body>
+
+</html>
