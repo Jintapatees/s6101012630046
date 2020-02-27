@@ -1,5 +1,6 @@
 {% load static %}
 <html>
+
 <head>
     <title>Calculator</title>
 </head>
@@ -8,16 +9,19 @@
     <h1>Calculator</h1>
     <br>
 
-    <form action="add" method="post">
+    <form action="calculate" method="post">
         {% csrf_token %}
         <h2>Input 1</h2>
         <input type="text" name="input_1" required id="input_1">
 
         <h2>Input 2</h2>
         <input type="text" name="input_2" required id='input_2'>
-        
+
         <br><br>
         <input type="submit" name="add" value="Add" id='add'>
+        <input type="submit" name="sub" value="Sub" id='sub'>
+        <input type="submit" name="multiple" value="Multiple" id='multiple'>
+        <input type="submit" name="divide" value="Divide" id='divide'>
 
         <br><br>
         <result>Result is {{result}}</result>

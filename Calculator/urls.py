@@ -20,5 +20,5 @@ from Calculate import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('add', views.add, name='add')
+    path('calculate', views.calculate, name='calculate')
 ]
